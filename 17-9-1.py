@@ -28,5 +28,4 @@ def binary_search(nums, lead, left, right):
 
 
 print("Отсортированный список: ", numbers_sorted)
-
 print("Индекс введенного числа в списке: ", binary_search(numbers_sorted, lead_num, 0, len(numbers_sorted) - 1))
