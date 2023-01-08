@@ -56,6 +56,5 @@ def get_pets_photos():
         if 'data' in photo[i].get_dom_attribute('src'):
             count += 1
 
-    print('PHOTOS:', count)
-    assert count
+    yield count
 
