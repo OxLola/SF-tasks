@@ -17,7 +17,7 @@ def test_all_animals_are_present(logging_in_and_go_to_my_pets, get_pets):
 def test_pets_have_photos(logging_in_and_go_to_my_pets, get_pets, get_pets_photos):
     WebDriverWait(pytest.driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, ".\\.col-sm-4.left")))
-    assert int(get_pets_photos) >= len(get_pets) / 2
+    assert get_pets_photos >= len(get_pets) / 2
 
 
 # 3. У всех питомцев есть имя, возраст и порода.
